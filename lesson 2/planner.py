@@ -95,7 +95,7 @@ class Planner:
     try:
         driver.find_element_by_xpath("//div[@class='goals-container js-goals-container js-inprogress-goals-container']//div[1]//div[3]//button[1]").click()
     except NoSuchElementException:
-        print("Goals is empty")
+        print("Goals are empty")
     else:
         delete = driver.find_element_by_xpath("//div[@class='goal-actions open']//li[@title='Delete']//a")
         delete.click()
