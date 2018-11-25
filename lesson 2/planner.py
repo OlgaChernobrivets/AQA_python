@@ -38,7 +38,7 @@ class Planner:
     dropdown.select_by_value("500")
     notify = driver.find_element_by_xpath("//input[@placeholder='QALead or DevLead, PM and Department Head']")
     notify.click()
-    time.sleep(10)
+    time.sleep(3)
     notify.send_keys("Abigale Rippin")
     wait = WebDriverWait(driver, 10)
     notifier = driver.find_element_by_xpath("//ul//li[contains(.,'Abigale Rippin')]")
